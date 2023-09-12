@@ -6,11 +6,12 @@
 
 body {
     background-color: rgb(214, 199, 180);
+    font-family: 'Poppins', sans-serif;    
 }
 
 main {
     margin: 1.5rem auto;
-    width: 800px;
+    width: 850px;
     text-align: center;
     background-color: rgb(244, 244, 217);
     border-radius: 20px;
@@ -24,22 +25,25 @@ header {
     align-items: center;
     border-top-left-radius: 185px;
     border-top-right-radius: 20px;
-
 }
 
-
 .profile {
-    margin: 0 0 5px;
+    margin: 5px 0 5px 0;
     text-align: center;
     z-index: 999;
+}
+
+.profile img{
+    border-radius: 50%;
+    border: 2px solid #9b541eb2;
 
 }
 
 .about_me {
     background-color: #9b541eb2;
     width: 100%;
-    margin-left: -20px;
-    font-family: 'Amaranth', sans-serif;
+    margin-left: -30px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .profile img {
@@ -52,8 +56,7 @@ header {
 }
 
 .about_me h1 {
-    font-size: xx-large;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 5px;
 }
 
@@ -69,7 +72,7 @@ header {
     text-align: left;
     padding: 25px 0 20px 0;
     list-style: none;
-    margin-top: -75px;
+    margin-top: -74px;
 
 }
 
@@ -101,15 +104,16 @@ header {
     line-height: 2.5rem;
     color: #d7d5d5;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .info li i {
     color: rgb(197, 118, 40);
+    padding-right: 5px ;
 }
 
 .info li a:hover {
-    color: rgb(232, 150, 17);
-
+    color: rgb(197, 118, 40);
 }
 
 .skills {
@@ -119,9 +123,10 @@ header {
 
 .skills p {
     text-decoration: underline;
-    color: #d7d5d5;
+    /* color: #d7d5d5; */
     font-size: 14px;
     font-weight: 500;
+    color: rgb(235, 236, 236);
 }
 
 .skills li {
@@ -129,6 +134,9 @@ header {
     color: #cbc9c9;
 }
 
+.skills li i{
+    padding-right: 5px;
+}
 
 .skills li:hover {
     color: rgb(218, 121, 43);
@@ -158,6 +166,47 @@ header {
     color: rgb(194, 76, 55);
 }
 
+.design{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(254, 148, 42, 0.35);
+}
+
+.design:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.deploy{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(254, 148, 42, 0.35);
+}
+
+.deploy:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.tool{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(254, 148, 42, 0.35);
+}
+
+.tool:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.msoffice{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(254, 148, 42, 0.35);
+}
+
+.msoffice:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
 
 .projects {
     line-height: 30px;
@@ -174,8 +223,9 @@ header {
 .right_content {
     padding-top: 5px;
     padding-left: 10px;
-    padding-right: 25px;
+    padding: 10px;
     width: 100%;
+    margin-right: 10px;
 }
 
 .right_content h3 {
@@ -200,6 +250,13 @@ header {
 
 .course h4 {
     margin-bottom: 10px;
+}
+
+.course a{
+    text-decoration: none;
+}
+.course a:hover{
+    color: rgb(197, 118, 40);
 }
 
 .course>:nth-child(2) {
@@ -244,18 +301,24 @@ header {
 }
 
 .education {
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 0;
+}
+
+.degree{
+    width: 80%;
 }
 
 .year,
 .passedout {
     text-align: right;
+    font-size: 12px;
 }
 
-.year,
 .passedout>p {
-    font-size: 14px;
+    font-size: 12px;    
 }
 
 .passedout {
@@ -267,7 +330,10 @@ header {
 .sslc {
     display: flex;
     justify-content: space-between;
+}
 
+.diploma{
+    margin-top: 5px;
 }
 
 .degree>:nth-child(2),
@@ -280,7 +346,6 @@ header {
     margin: 10px 0;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(169, 100, 31, 0.35);
-
 }
 
 .hobby {
@@ -305,6 +370,13 @@ header {
     color: rgb(106, 196, 235);
 }
 
+.book li i{
+    padding-right:5px ;
+}
+.music li i{
+    padding-right:5px ;
+}
+
 .tamil {
     display: flex;
     gap: 20%;
@@ -315,7 +387,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .percent {
@@ -336,7 +407,7 @@ header {
     border-radius: 5px;
 }
 
-.languageleft {
+.language-left{
     display: none;
 }
 
@@ -357,8 +428,52 @@ footer {
 /* Responsive Design */
 
 @media only screen and (max-width: 770px) {
+
     main {
         padding: 10px 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .language-left {
+        display: block;
+        color: #d7d5d5;
+    }
+
+    .tamil{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .language{
+        display: none;
+    }
+
+    .hobby {
+        display: flex;
+        gap: 10%;
+        line-height: 25px;
+    }
+
+    .maxson,
+    .tafe {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+
+    .ug,
+    .sslc,
+    .diploma {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .passedout {
+        text-align: left;
     }
 }
 
@@ -467,7 +582,6 @@ footer {
 
     }
 
-
     .ug,
     .sslc,
     .diploma {
@@ -499,7 +613,5 @@ footer {
         flex-direction: column;
         line-height: 25px;
     }
-
-
 
 }
