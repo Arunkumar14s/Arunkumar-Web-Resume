@@ -430,9 +430,9 @@ footer {
 @media only screen and (max-width: 770px) {
 
     main {
-        padding: 10px 20px;
+        padding: 0;
         width: 100%;
-        margin: 10px;
+        margin: 10px 1px;
     }
 
     .info{
