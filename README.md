@@ -1,5 +1,5 @@
-# Project Title 
-[Short Project Description]
+# Arunkumar Web Resume 
+[Simple and Responsive Resume Build with HTML & CSS]
 ## Table of Contents
 - [Project Title](#Arunkumar-Web-Resume)
 - [Description](#description)
